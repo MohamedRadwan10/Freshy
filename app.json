@@ -1,21 +1,24 @@
 {
   "expo": {
-    "name": "Recipe-App",
+    "name": "Freshy",
     "slug": "Recipe-App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "userInterfaceStyle": "light"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mohamedradwan10.RecipeApp",
+      "userInterfaceStyle": "light"
     },
     "web": {
       "bundler": "metro",
@@ -24,6 +27,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-font",
       [
         "expo-splash-screen",
         {
@@ -36,6 +40,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0c66dc1a-1159-4698-b3fd-7253e8b37d12"
+      }
+    },
+    "owner": "mohamedradwan10"
   }
 }
